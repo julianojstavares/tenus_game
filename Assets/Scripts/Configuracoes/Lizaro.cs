@@ -1,68 +1,66 @@
 using UnityEngine;
 
-using System;
-
-class Lizaro
+class Lizaro : MonoBehaviour
 {
-  private static string localizacao = "flor";
-  private static bool temArma = false;
-  private static bool temRoupa = false;
-  private static bool leitor = false;
-  private static int opcao = 0;
-  
-    private static Narrador dungeonMaster = new Narrador();
+  private string localizacao = "flor";
+  private bool temArma = false;
+  private bool temRoupa = false;
+  private bool leitor = false;
+  private int opcao = 0;
+  public TMPro.TMP_InputField text;
+    public Narrador dungeonMaster;
 
-  public static void SetLocal(string local)
+  public  void SetLocal(string local)
   {
     localizacao = local;
   }
   
-  public static string GetLocal()
+  public  string GetLocal()
   {
     return localizacao;
   }
 
-  public static void SetOpcao(int n)
+  public  void SetOpcao(int n)
   {
     opcao = n;
   }
   
-  public static int GetOpcao()
+  public  int GetOpcao()
   {
     return opcao;
   }
 
-  public static void SetTemArma(bool resposta)
+  public  void SetTemArma(bool resposta)
   {
     temArma = resposta;
   }
 
-  public static bool GetTemArma()
+  public  bool GetTemArma()
   {
     return temArma;
   }
 
-  public static void SetTemRoupa(bool resposta)
+  public  void SetTemRoupa(bool resposta)
   {
     temRoupa = resposta;
   }
 
-  public static bool GetTemRoupa()
+  public  bool GetTemRoupa()
   {
     return temRoupa;
   }
 
-  public static void SetLeitor(bool resposta)
+  public  void SetLeitor(bool resposta)
   {
     leitor = resposta;
   }
 
-  public static bool GetLeitor()
+  public  bool GetLeitor()
   {
     return leitor;
   }
 
-  public static void EscolhaTripla()
+  public  void EscolhaTripla()
   {
     string input = "";
     int n = 0;
@@ -71,34 +69,35 @@ class Lizaro
     {
       do
       {
-        input = Console.ReadLine();
+        input = Diz();
+        Espera();
       } while (int.TryParse(input, out n) == false);
       switch (n)
       {
         case 1:
             valorInvalido = false;
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             dungeonMaster.Diz("<br>");
             break;
         case 2:
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             valorInvalido = false;
             dungeonMaster.Diz("<br>");
             break;
         case 3:
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             valorInvalido = false;
             dungeonMaster.Diz("<br>");
             break;
         default:
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             valorInvalido = true;
             break;
       }
     }while(valorInvalido);
   }
 
-  public static void EscolhaDupla()
+  public  void EscolhaDupla()
   {
     string input = "";
     int n = 0;
@@ -107,17 +106,18 @@ class Lizaro
     {
       do
       {
-        input = Console.ReadLine();
+        input = Diz();
+        Espera();
       } while (int.TryParse(input, out n) == false);
       switch (n)
       {
         case 1:
             valorInvalido = false;
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             dungeonMaster.Diz("<br>");
             break;
         case 2:
-            Lizaro.SetOpcao(n);
+            SetOpcao(n);
             valorInvalido = false;
             dungeonMaster.Diz("<br>");
             break;
@@ -128,11 +128,21 @@ class Lizaro
     }while(valorInvalido);
   }
 
-  public static int RolarDado(int numeroFaces)
+  public  int RolarDado(int numeroFaces)
   {
     System.Random rand = new System.Random();
     int sorteado = rand.Next(1, numeroFaces);
     return sorteado;
+  }
+    public  void Espera()
+    {
+        text.readOnly = true;
+    }
+  public  string Diz()
+  {
+      text.readOnly = false;
+      text.Select();
+      return text.ToString();
   }
 
 }

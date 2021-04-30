@@ -981,7 +981,7 @@ MonoBehaviour:
     et mi id lacinia. Ut dignissim arcu quis ex rhoncus sollicitudin. Integer dapibus
     sagittis tincidunt. Quisque a velit ut risus fermentum sagittis quis vitae arcu.
 
-    
+
 
     Etiam
     in nisl consectetur, commodo est eget, lobortis diam. Proin mauris ipsum, fringilla
@@ -996,17 +996,17 @@ MonoBehaviour:
     mauris. Phasellus luctus enim sit amet ligula lobortis, non condimentum elit
     mattis.
 
-    
 
-    Nulla hendrerit lectus et dolor hendrerit, eget sagittis
-    eros luctus. Ut lectus justo, lobortis at eros eu, mattis ultricies tellus. Etiam
+
+    Nulla hendrerit lectus et dolor hendrerit, eget sagittis eros
+    luctus. Ut lectus justo, lobortis at eros eu, mattis ultricies tellus. Etiam
     cursus euismod est ut accumsan. Fusce non egestas risus, et pharetra lorem. Curabitur
     vel orci ac arcu egestas tincidunt. Ut eros odio, lobortis at justo vel, consequat
     rhoncus libero. Nullam pellentesque fringilla leo et lacinia. Morbi non aliquam
     purus, nec dapibus sem. Sed elementum semper tempor. Etiam pharetra volutpat
     purus eget viverra.
 
-    
+
 
     Praesent commodo tellus sit amet convallis imperdiet.
     Phasellus fermentum ex ut lacus molestie, sed pulvinar massa tincidunt. Proin
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     ut tellus. Aliquam sed lacinia erat. Donec rhoncus lectus mauris, eu tempus dui
     tristique vitae. Maecenas imperdiet risus nec mi rutrum tempus.
 
-    
+
 
     Mauris
     ligula velit, pellentesque vel neque sit amet, faucibus venenatis nisi. Duis
@@ -1030,11 +1030,11 @@ MonoBehaviour:
     efficitur, libero id ultrices viverra, quam ipsum pulvinar elit, non condimentum
     ligula ipsum quis velit.
 
-    
 
-    Nulla id dignissim libero. Nullam rhoncus
-    ante quis purus vehicula lobortis. Nunc id erat volutpat ligula finibus finibus
-    id in libero. Sed porta, felis eu euismod pharetra, leo libero luctus erat, vel
+
+    Nulla id dignissim libero. Nullam rhoncus ante
+    quis purus vehicula lobortis. Nunc id erat volutpat ligula finibus finibus id
+    in libero. Sed porta, felis eu euismod pharetra, leo libero luctus erat, vel
     pellentesque nisl lacus in massa. Nulla turpis orci, convallis eu rutrum vitae,
     hendrerit et turpis. Maecenas vitae dolor et dolor dictum feugiat in a odio.
     Nam leo nibh, volutpat at dictum non, convallis quis mauris. Sed consequat euismod
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     sit amet sodales nibh. Integer arcu risus, mollis vitae ex bibendum, sollicitudin
     facilisis ante. Pellentesque tincidunt ex ut mauris vestibulum feugiat.
 
-    
+
 
     Duis
     sed sapien pellentesque, commodo ipsum eu, tristique enim. Donec risus nulla,
@@ -1054,12 +1054,12 @@ MonoBehaviour:
     non egestas. Aenean dui orci, efficitur at quam ut, efficitur accumsan quam.
     Etiam finibus dictum justo, ut ultricies tellus vestibulum eu.
 
-    
 
-    Nam
-    purus diam, vestibulum sit amet mi eget, consequat congue lectus. Nam vulputate
-    mollis ligula, vel tincidunt tellus. Phasellus lectus mi, imperdiet sed maximus
-    non, laoreet vel enim. Vestibulum massa turpis, commodo ut metus placerat, tristique
+
+    Nam purus
+    diam, vestibulum sit amet mi eget, consequat congue lectus. Nam vulputate mollis
+    ligula, vel tincidunt tellus. Phasellus lectus mi, imperdiet sed maximus non,
+    laoreet vel enim. Vestibulum massa turpis, commodo ut metus placerat, tristique
     aliquam justo. In posuere lacinia sapien. Vivamus finibus velit quis est posuere
     accumsan. Proin ornare porta finibus. Pellentesque varius imperdiet lacinia.
     Donec in dui risus. Donec tempus a est id rutrum. Pellentesque ut blandit nibh,
@@ -1068,19 +1068,19 @@ MonoBehaviour:
     tempor dui fringilla. Proin vehicula sollicitudin augue, ac interdum sapien.
     Aenean vel nunc id nisi posuere tristique.
 
-    
 
-    Proin fringilla pretium
-    felis, ut sodales mauris mollis et. Mauris fringilla cursus erat a laoreet. Etiam
-    et eros ligula. Phasellus eu arcu felis. Aenean mollis dui lorem, nec pretium
-    arcu consectetur ut. Quisque id aliquam nisi. Class aptent taciti sociosqu ad
-    litora torquent per conubia nostra, per inceptos himenaeos. Sed sagittis arcu
-    in nisi eleifend, sit amet efficitur eros tempor. Nullam lobortis fermentum ante,
-    at iaculis sem lacinia quis. Nam eu purus placerat, congue lectus a, posuere
-    lacus. Aliquam vitae tempor ante. Proin gravida sapien ac nunc facilisis congue.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at lacus sem.
 
-    
+    Proin fringilla pretium felis,
+    ut sodales mauris mollis et. Mauris fringilla cursus erat a laoreet. Etiam et
+    eros ligula. Phasellus eu arcu felis. Aenean mollis dui lorem, nec pretium arcu
+    consectetur ut. Quisque id aliquam nisi. Class aptent taciti sociosqu ad litora
+    torquent per conubia nostra, per inceptos himenaeos. Sed sagittis arcu in nisi
+    eleifend, sit amet efficitur eros tempor. Nullam lobortis fermentum ante, at
+    iaculis sem lacinia quis. Nam eu purus placerat, congue lectus a, posuere lacus.
+    Aliquam vitae tempor ante. Proin gravida sapien ac nunc facilisis congue. Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Proin at lacus sem.
+
+
 
     Quisque
     efficitur, justo vitae pharetra mollis, arcu sapien viverra est, vel congue mauris
@@ -1095,11 +1095,11 @@ MonoBehaviour:
     tortor at mauris tincidunt, eu sodales mi malesuada. Mauris eu est in dolor scelerisque
     sollicitudin et vitae turpis. Mauris a interdum ante.
 
-    
 
-    Suspendisse
-    tristique ullamcorper semper. Proin in velit pellentesque ex tempus tempus. Duis
-    vitae convallis sem, in dictum lectus. Nulla vehicula ante efficitur felis pretium,
+
+    Suspendisse tristique
+    ullamcorper semper. Proin in velit pellentesque ex tempus tempus. Duis vitae
+    convallis sem, in dictum lectus. Nulla vehicula ante efficitur felis pretium,
     sed euismod dui fermentum. Nunc ex nunc, rutrum dictum condimentum quis, bibendum
     non erat. Nunc vehicula justo sed velit tempor mattis a non leo. Morbi pretium
     orci ac sagittis bibendum. Pellentesque vel metus vitae turpis porttitor gravida.
@@ -1107,7 +1107,7 @@ MonoBehaviour:
     ultricies quis elit et, viverra laoreet mauris. Mauris cursus consectetur enim.
     Nulla et lacus efficitur, aliquet orci id, tempus urna. Phasellus non eros massa.
 
-    
+
 
     Etiam
     ut libero pellentesque libero ultricies sollicitudin. Vivamus dapibus magna nec
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     Fusce quis hendrerit tortor, quis facilisis urna. Morbi pharetra lobortis nulla
     ut varius. Nullam tincidunt risus sapien, at pellentesque orci mollis eget.
 
-    
+
 
     Aliquam
     a lobortis dolor. Quisque maximus interdum est sit amet pellentesque. Donec elit
@@ -1131,11 +1131,11 @@ MonoBehaviour:
     vel massa bibendum convallis. Vestibulum sed tellus sem. Phasellus aliquet neque
     libero, vitae pellentesque erat iaculis id.
 
-    
 
-    Mauris viverra auctor
-    eros, ac fringilla orci volutpat a. In aliquet sagittis euismod. Mauris imperdiet
-    mi non nibh pellentesque, id vestibulum nunc condimentum. Proin sem ipsum, semper
+
+    Mauris viverra auctor eros,
+    ac fringilla orci volutpat a. In aliquet sagittis euismod. Mauris imperdiet mi
+    non nibh pellentesque, id vestibulum nunc condimentum. Proin sem ipsum, semper
     tincidunt ligula nec, tempor fringilla metus. Etiam nec consequat urna, sit amet
     ultrices ipsum. Nam finibus, urna posuere maximus ullamcorper, ante lectus gravida
     diam, ac tristique dolor nibh non massa. Aliquam nec quam sapien. Aenean ac ipsum
@@ -1144,7 +1144,7 @@ MonoBehaviour:
     auctor, justo quis cursus hendrerit, mi magna rhoncus mi, et sagittis arcu diam
     vel lorem. Vestibulum aliquet faucibus nisi in faucibus.
 
-    
+
 
     Donec finibus
     id tellus et euismod. Aliquam sed lorem dapibus, venenatis lectus vitae, convallis
@@ -1152,8 +1152,8 @@ MonoBehaviour:
     libero blandit laoreet sed ut ligula. Nunc id massa erat. Suspendisse cursus
     magna magna. Maecenas viverra volutpat ante, sed suscipit neque volutpat at.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
+  m_sharedMaterial: {fileID: -7865113321702200562, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1579,6 +1579,9 @@ GameObject:
   - component: {fileID: 1778492465}
   - component: {fileID: 1778492464}
   - component: {fileID: 1778492466}
+  - component: {fileID: 1778492467}
+  - component: {fileID: 1778492469}
+  - component: {fileID: 1778492468}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1626,7 +1629,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 87284949}
-  dungeonMaster: {fileID: 1778492464}
+--- !u!114 &1778492467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778492463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef908570a5b6a94bb5ffbea3c15078f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1778492468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778492463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f50c012c86fcd46ba216ab2bf182ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1778492469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778492463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184c8e028f63ec544a2d433908e08b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856341384
 GameObject:
   m_ObjectHideFlags: 0

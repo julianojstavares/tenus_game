@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class StartGame : MonoBehaviour
 {
+
+    private Tenus tenus;
+
+    private void Awake() {
+        tenus = GetComponent<Tenus>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        //Tenus.Jogar();
+        tenus.Jogar();
     }
 }

@@ -8,7 +8,11 @@ class Lizaro : MonoBehaviour
   private bool leitor = false;
   private int opcao = 0;
   public TMPro.TMP_InputField text;
-    public Narrador dungeonMaster;
+    private Narrador dungeonMaster;
+
+    private void Awake() {
+      dungeonMaster = GetComponent<Narrador>();
+    }
 
   public  void SetLocal(string local)
   {
@@ -128,17 +132,17 @@ class Lizaro : MonoBehaviour
     }while(valorInvalido);
   }
 
-  public  int RolarDado(int numeroFaces)
+  public int RolarDado(int numeroFaces)
   {
     System.Random rand = new System.Random();
     int sorteado = rand.Next(1, numeroFaces);
     return sorteado;
   }
-    public  void Espera()
+    public void Espera()
     {
         text.readOnly = true;
     }
-  public  string Diz()
+  public string Diz()
   {
       text.readOnly = false;
       text.Select();

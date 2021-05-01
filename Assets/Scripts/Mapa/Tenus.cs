@@ -4,23 +4,20 @@ public class Tenus : MonoBehaviour
 {
     private Narrador narrador;
     private Lizaro lizaro;
-    private Txt_Tenus txt;
+    private Txt_Tenus tenus;
     private bool waitOption = true;
 
     private void Awake() {
         narrador = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Narrador>();
         lizaro = GameObject.FindGameObjectWithTag("Player").GetComponent<Lizaro>();
-        txt = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_Tenus>();
+        tenus = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_Tenus>();
     }
   public void Jogar()
   {
     narrador.Silencio();
-    narrador.Diz(txt.part_1);
-    narrador.Diz(txt.part_2);
-    narrador.Diz(txt.part_3);
+    narrador.Diz(tenus.txt);
     narrador.Silencio();
     lizaro.Escolhas(3);
-
   }
 
   private void Update() {

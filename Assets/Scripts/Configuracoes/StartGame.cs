@@ -20,7 +20,6 @@ public class StartGame : MonoBehaviour
         narrador.NovaHistoria();
         narrador.Silencio();
         narrador.Diz(intro.txt);
-        lizaro.Diz();
         lizaro.Escolhas(1);
     }
 

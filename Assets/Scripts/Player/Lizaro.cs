@@ -82,11 +82,6 @@ class Lizaro : MonoBehaviour
       input.readOnly = true;
       input.interactable = false;
   }
-  public void Diz()
-  {
-      ReadyInput();
-  }
-
   private void ReadyInput()
   {
     input.text = "";
@@ -98,15 +93,19 @@ class Lizaro : MonoBehaviour
 
   public void Escolhas(int opcoes)
   {
+    opcao = 0;
     switch (opcoes)
     {
       case 1:
+        ReadyInput();
         getEscolhaUnica = true;
         break;
       case 2:
+        ReadyInput();
         getEscolhaDupla = true;
         break;
       case 3:
+        ReadyInput();
         getEscolhaTripla = true;
         break;
       default:
@@ -122,6 +121,7 @@ class Lizaro : MonoBehaviour
       if(input.text != ""){SetOpcao();}
       EscolhaUnica();
       EscolhaDupla();
+      EscolhaTripla();
     }
   }
   private void EscolhaUnica()
@@ -139,11 +139,25 @@ class Lizaro : MonoBehaviour
       switch (GetOpcao())
       {
         case 1:
-          getEscolhaDupla = false;
-          break;
         case 2:
           getEscolhaDupla = false;
           break;    
+        default:
+          ReadyInput();
+          break;
+      }
+  }
+
+  private void EscolhaTripla()
+  {
+    if(getEscolhaTripla)
+      switch (GetOpcao())
+      {
+        case 1:
+        case 2:
+        case 3:
+          getEscolhaTripla = false;
+          break;      
         default:
           ReadyInput();
           break;

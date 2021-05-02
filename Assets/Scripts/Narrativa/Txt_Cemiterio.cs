@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Txt_Cemiterio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string chegada { get; } =
+        "Ao se aproximar do cemitério, você percebe que vários corpos foram enterrados recentemente"
+        + "No cemitério você acha tem um túmulo aberto e nele você encontra uma espada e uma roupa de guarda. Você pega: 1 – a espada, 2 – a roupa 3 – A espada e a roupa"
+        ;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string partida { get; } = "Não há nada mais para fazer aqui. Há um caminho para o portão da cidade dos elfos inimigos. Como é o único caminho a seguir você anda por ele.";
 }

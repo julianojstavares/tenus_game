@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class Narrador: MonoBehaviour
+public class Narrador: MonoBehaviour
 {
     private TMPro.TMP_Text output;
 

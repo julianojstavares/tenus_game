@@ -7,12 +7,14 @@ public class StartGame : MonoBehaviour
     private Lizaro lizaro;
     private Tenus tenus;
     private bool waitOption = true;
+    private CasaAbandonada casaAbandonada;
 
     private void Awake() {
         narrador = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Narrador>();
         intro = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_Intro>();
         lizaro = GameObject.FindGameObjectWithTag("Player").GetComponent<Lizaro>();
         tenus = GameObject.FindGameObjectWithTag("Map").GetComponent<Tenus>();
+        casaAbandonada = GameObject.FindGameObjectWithTag("Map").GetComponent<CasaAbandonada>();
     }
     // Start is called before the first frame update
     void Start()
@@ -28,10 +30,10 @@ public class StartGame : MonoBehaviour
         {
             if(lizaro.GetOpcao() == 1)
             {
-                tenus.Jogar();
+                //tenus.Jogar();
+                casaAbandonada.Ir();
                 waitOption = false;
             }
-            
         }
     }
     

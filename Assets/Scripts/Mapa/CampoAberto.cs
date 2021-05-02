@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class CampoAberto : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Narrador narrador;
+    private Lizaro lizaro;
+    private Txt_CampoAberto txt;
+    private CasaAbandonada casaAbandonada;
+    private Estrada estrada;
+    private bool waitOption = false;
+
+    private void Awake()
     {
+        narrador = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Narrador>();
+        lizaro = GameObject.FindGameObjectWithTag("Player").GetComponent<Lizaro>();
+        txt = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_CampoAberto>();
+        casaAbandonada = GameObject.FindGameObjectWithTag("Map").GetComponent<CasaAbandonada>();
+        estrada = GameObject.FindGameObjectWithTag("Map").GetComponent<Estrada>();
+    }
+
+    public void Ir()
+    {
+        narrador.Diz(txt.intro);
+        lizaro.Escolhas(2);
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (waitOption)
+        {
+            if (lizaro.GetOpcao() == 1)
+            {
+                waitOption = false;
+                casaAbandonada.Ir();
+            }
+            else
+            {
+                waitOption = false;
+                estrada.Ir();
+            }
+        }
     }
+
 }

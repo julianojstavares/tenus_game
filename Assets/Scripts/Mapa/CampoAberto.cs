@@ -24,7 +24,7 @@ public class CampoAberto : MonoBehaviour
     {
         narrador.Diz(txt.intro);
         lizaro.Escolhas(2);
-        
+        waitOption = true;
     }
 
     private void Update()
@@ -36,7 +36,7 @@ public class CampoAberto : MonoBehaviour
                 waitOption = false;
                 casaAbandonada.Ir();
             }
-            else
+            else if (lizaro.GetOpcao() == 2)
             {
                 waitOption = false;
                 estrada.Ir();

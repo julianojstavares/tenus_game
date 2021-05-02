@@ -2,26 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CasaAbandonada : MonoBehaviour
+public class Gruta : MonoBehaviour
 {
     private Narrador narrador;
     private Lizaro lizaro;
-    private Txt_CasaAbandonada txt;
-    private Estrada estrada;
-    private Gruta gruta;
+    private Txt_Gruta txt;
+    private VilaVerdejante vilaVerdejante;
     public bool waitOption = false;
 
     private void Awake()
     {
         narrador = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Narrador>();
         lizaro = GameObject.FindGameObjectWithTag("Player").GetComponent<Lizaro>();
-        txt = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_CasaAbandonada>();
-        estrada = GameObject.FindGameObjectWithTag("Map").GetComponent<Estrada>();
+        txt = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_Gruta>();
+        vilaVerdejante = GameObject.FindGameObjectWithTag("Map").GetComponent<VilaVerdejante>();
     }
 
     public void Ir()
     {
-        narrador.Diz(txt.intro);
+        narrador.Diz(txt.entrarGruta);
         lizaro.Escolhas(2);
         waitOption = true;
     }
@@ -32,16 +31,14 @@ public class CasaAbandonada : MonoBehaviour
         {
             if (lizaro.GetOpcao() == 1)
             {
+                narrador.Diz(txt.comOuro);
                 waitOption = false;
-                narrador.Diz(txt.ler);
-                lizaro.SetLeitor(true);
-                estrada.Ir();
             }
-            else if(lizaro.GetOpcao() == 2)
+            else if (lizaro.GetOpcao() == 2)
             {
+                narrador.Diz(txt.semOuro);
+                vilaVerdejante.Ir();
                 waitOption = false;
-                narrador.Diz(txt.sair);
-                estrada.Ir();
             }
         }
     }

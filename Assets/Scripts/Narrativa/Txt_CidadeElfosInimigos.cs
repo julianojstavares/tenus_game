@@ -9,8 +9,12 @@ public class Txt_CidadeElfosInimigos : MonoBehaviour
         + "1 - Lutar, 2 - Seguir furtivamente<br>"
         ;
 
-    public string furtivo { get; } = "Você conseguiu, passar pelos guardas sem ser notado, e, entrar na cidade<br>";
-    
+    public string furtivo { get; } = "Você conseguiu, passou pelos guardas sem ser notado, e entrou na cidade<br>";
+
+    public string disfarce { get; } = "Foi fácil até. Com essa roupa de guarda que você vestiu no cemitério eles nem suspeitaram de você.<br>";
+
+    public string naoFurtivo { get; } = "Você não conseguiu passar pelos guardas sem ser notado. Eles te viram e você teve que lutar por sua vida<br>";
+
     public string combateEspada { get; } = "Parece que aquela espada que você pegou no cemitério foi fundamental no combate. Você segue em frente como se nada tivesse acontecido.<br>";
 
     public string derrotado { get; } =

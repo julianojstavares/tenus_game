@@ -22,7 +22,7 @@ public class BaseAvancada : MonoBehaviour
     {
         narrador.Diz(txt.intro);
         lizaro.Escolhas(2);
-        
+        waitOption = true;
     }
 
     private void Update()

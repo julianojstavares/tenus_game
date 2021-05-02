@@ -6,10 +6,10 @@ class Lizaro : MonoBehaviour
     private bool temArma = false;
     private bool temRoupa = false;
     private bool leitor = false;
-    public int opcao = 0;
-    public bool getEscolhaUnica = false;
-    public bool getEscolhaDupla = false;
-    public bool getEscolhaTripla = false;
+    private int opcao = 0;
+    private bool getEscolhaUnica = false;
+    private bool getEscolhaDupla = false;
+    private bool getEscolhaTripla = false;
     private TMPro.TMP_InputField input;
 
     private void Awake()
@@ -33,7 +33,7 @@ class Lizaro : MonoBehaviour
     public void SetOpcao()
     {
         opcao = int.Parse(input.text);
-        Debug.Log(input.text);
+        //Debug.Log(input.text);
         FinishInput();
     }
 
@@ -79,7 +79,7 @@ class Lizaro : MonoBehaviour
         return sorteado;
     }
 
-    public void FinishInput()
+    private void FinishInput()
     {
         input.readOnly = true;
         input.interactable = false;
@@ -90,7 +90,7 @@ class Lizaro : MonoBehaviour
         input.readOnly = false;
         input.interactable = true;
         input.ActivateInputField();
-        Debug.Log("ReadyInput");
+        //Debug.Log("ReadyInput");
     }
 
     public void Escolhas(int opcoes)
@@ -116,7 +116,7 @@ class Lizaro : MonoBehaviour
         }
     }
 
-    public void WaitInput()
+    private void WaitInput()
     {
         if (Input.GetKeyDown(KeyCode.Return) && input.readOnly == false)
         {
@@ -126,7 +126,7 @@ class Lizaro : MonoBehaviour
             EscolhaTripla();
         }
     }
-    public void EscolhaUnica()
+    private void EscolhaUnica()
     {
         if (getEscolhaUnica)
             if (GetOpcao() != 1)
@@ -135,7 +135,7 @@ class Lizaro : MonoBehaviour
                 getEscolhaUnica = false;
     }
 
-    public void EscolhaDupla()
+    private void EscolhaDupla()
     {
         if (getEscolhaDupla)
             switch (GetOpcao())
@@ -150,7 +150,7 @@ class Lizaro : MonoBehaviour
             }
     }
 
-    public void EscolhaTripla()
+    private void EscolhaTripla()
     {
         if (getEscolhaTripla)
             switch (GetOpcao())

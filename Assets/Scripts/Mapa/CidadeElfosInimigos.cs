@@ -10,6 +10,8 @@ public class CidadeElfosInimigos : MonoBehaviour
     private CampoAberto campoAberto;
     private CasaAbandonada casaAbandonada;
     private NinhoAranha ninhoAranha;
+    private bool waitOption = false;
+    private bool waitOptionChave = false;
 
     private void Awake()
     {
@@ -23,23 +25,8 @@ public class CidadeElfosInimigos : MonoBehaviour
     public void Ir()
     {
         narrador.Diz(txt.intro);
-        lizaro.EscolhaDupla();
-        if (lizaro.GetOpcao() == 1)
-        {
-            Combate();
-        }
-        else
-        {
-            if (lizaro.RolarDado(6) > 5 || lizaro.GetTemRoupa() == true)
-            {
-                narrador.Diz(txt.furtivo);
-                campoAberto.Ir();
-            }
-            else
-            {
-                Combate();
-            }
-        }
+        lizaro.Escolhas(2);
+        waitOption = true;
     }
 
     private void Combate()
@@ -64,24 +51,7 @@ public class CidadeElfosInimigos : MonoBehaviour
                 case 6:
                     narrador.Diz(txt.ferido);
                     lizaro.Escolhas(2);
-                    if (lizaro.GetOpcao() == 1)
-                    {
-                        if (lizaro.RolarDado(20) > 15)
-                        {
-                            narrador.Diz(txt.pegouChave);
-                            casaAbandonada.Ir();
-                        }
-                        else
-                        {
-                            narrador.Diz(txt.semChave);
-
-                            ninhoAranha.Ir();
-                        }
-                    }
-                    else
-                    {
-                        ninhoAranha.Ir();
-                    }
+                    waitOptionChave = true;
                     break;
                 case 7:
                 case 8:
@@ -109,5 +79,55 @@ public class CidadeElfosInimigos : MonoBehaviour
     {
         narrador.Diz(txt.vitoria);
         campoAberto.Ir();
+    }
+
+    private void Update()
+    {
+        if (waitOption)
+        {
+            if (lizaro.GetOpcao() == 1)
+            {
+                waitOption = false;
+                Combate();
+            }
+            else if(lizaro.GetOpcao() == 2)
+            {
+                waitOption = false;
+                if (lizaro.RolarDado(6) > 5 || lizaro.GetTemRoupa() == true)
+                {
+                    narrador.Diz(txt.furtivo);
+                    if (lizaro.GetTemRoupa()) { narrador.Diz(txt.disfarce); }
+                    campoAberto.Ir();
+                }
+                else
+                {
+                    narrador.Diz(txt.naoFurtivo);
+                    Combate();
+                }
+            }
+        }
+
+        if (waitOptionChave)
+        {
+            if (lizaro.GetOpcao() == 1)
+            {
+                waitOptionChave = false;
+                if (lizaro.RolarDado(20) > 15)
+                {
+                    narrador.Diz(txt.pegouChave);
+                    casaAbandonada.Ir();
+                }
+                else
+                {
+                    narrador.Diz(txt.semChave);
+                    ninhoAranha.Ir();
+                }
+            }
+            else if(lizaro.GetOpcao() == 2)
+            {
+                waitOptionChave = false;
+                ninhoAranha.Ir();
+            }
+        }
     }
 }

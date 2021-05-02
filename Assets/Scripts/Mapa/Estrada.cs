@@ -7,12 +7,18 @@ public class Estrada : MonoBehaviour
     private Narrador narrador;
     private Lizaro lizaro;
     private Txt_Estrada txt;
+    private bool waitOption = false;
+    private bool waitOptionGruta = false;
+    private Gruta gruta;
+    private VilaVerdejante vilaVerdejante;
 
     private void Awake()
     {
         narrador = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Narrador>();
         lizaro = GameObject.FindGameObjectWithTag("Player").GetComponent<Lizaro>();
         txt = GameObject.FindGameObjectWithTag("DungeonMaster").GetComponent<Txt_Estrada>();
+        gruta = GameObject.FindGameObjectWithTag("Map").GetComponent<Gruta>();
+        vilaVerdejante = GameObject.FindGameObjectWithTag("Map").GetComponent<VilaVerdejante>();
     }
 
     public void Ir()
@@ -22,23 +28,46 @@ public class Estrada : MonoBehaviour
         {
             narrador.Diz(txt.pergunta);
             lizaro.Escolhas(2);
-            if (lizaro.GetOpcao() == 1)
-            {
-                narrador.Diz(txt.comer);
-            }
-            else
-            {
-                GameOver();
-            }
+            waitOption = true;
         }
         else
         {
-            GameOver();
+            narrador.Diz(txt.gruta);
+            lizaro.Escolhas(2);
+            waitOptionGruta = true;
         }
     }
 
-    private void GameOver()
+    private void Update()
     {
-        narrador.Diz(txt.fim);
+        if (waitOption)
+        {
+            if (lizaro.GetOpcao() == 1)
+            {
+                waitOption = false;
+                narrador.Diz(txt.comer);
+            }
+            else if (lizaro.GetOpcao() == 2)
+            {
+                waitOption = false;
+                narrador.Diz(txt.gruta);
+                lizaro.Escolhas(2);
+                waitOptionGruta = true;
+            }
+        }
+
+        if (waitOptionGruta)
+        {
+            if(lizaro.GetOpcao() == 1)
+            {
+                waitOptionGruta = false;
+                gruta.Ir();
+            }
+            else if (lizaro.GetOpcao() == 2)
+            {
+                waitOptionGruta = false;
+                vilaVerdejante.Ir();
+            }
+        }
     }
 }

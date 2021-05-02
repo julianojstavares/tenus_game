@@ -25,6 +25,7 @@ public class Tenus : MonoBehaviour
         narrador.Diz(txt.intro);
         narrador.Silencio();
         lizaro.Escolhas(3);
+        waitOption = true;
     }
 
     private void Update()

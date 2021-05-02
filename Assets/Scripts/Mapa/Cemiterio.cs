@@ -22,29 +22,40 @@ public class Cemiterio : MonoBehaviour
     {
         narrador.Diz(txt.chegada);
         lizaro.Escolhas(3);
-        switch (lizaro.GetOpcao())
-        {
-            case 1:
-                lizaro.SetTemArma(true);
-                Continuar();
-                break;
-            case 2:
-                lizaro.SetTemRoupa(true);
-                Continuar();
-                break;
-            case 3:
-                lizaro.SetTemArma(true);
-                lizaro.SetTemRoupa(true);
-                Continuar();
-                break;
-            default:
-                break;
-        }
+        waitOption = true;
     }
 
     private void Continuar()
     {
         narrador.Diz(txt.partida);
         cidadeElfosInimigos.Ir();
+    }
+
+    private void Update()
+    {
+        if (waitOption)
+        {
+            switch (lizaro.GetOpcao())
+            {
+                case 1:
+                    waitOption = false;
+                    lizaro.SetTemArma(true);
+                    Continuar();
+                    break;
+                case 2:
+                    waitOption = false;
+                    lizaro.SetTemRoupa(true);
+                    Continuar();
+                    break;
+                case 3:
+                    waitOption = false;
+                    lizaro.SetTemArma(true);
+                    lizaro.SetTemRoupa(true);
+                    Continuar();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

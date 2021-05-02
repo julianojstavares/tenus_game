@@ -166,10 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9488c8c864cb3f42add86d0c6999131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  opcao: 0
-  getEscolhaUnica: 0
-  getEscolhaDupla: 0
-  getEscolhaTripla: 0
 --- !u!1 &87284947
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +320,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 0
@@ -450,7 +446,7 @@ MonoBehaviour:
   m_text: ...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
-  m_sharedMaterial: {fileID: 4725159990584085729, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
+  m_sharedMaterial: {fileID: 8271541076219424236, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -675,7 +671,7 @@ MonoBehaviour:
   m_text: Press Esc to exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
-  m_sharedMaterial: {fileID: -7865113321702200562, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
+  m_sharedMaterial: {fileID: -3681735049738075256, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -887,7 +883,7 @@ MonoBehaviour:
   m_text: Tenus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
-  m_sharedMaterial: {fileID: -7865113321702200562, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
+  m_sharedMaterial: {fileID: -3681735049738075256, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -980,6 +976,8 @@ GameObject:
   - component: {fileID: 1091353370}
   - component: {fileID: 1091353369}
   - component: {fileID: 1091353368}
+  - component: {fileID: 1091353375}
+  - component: {fileID: 1091353376}
   m_Layer: 0
   m_Name: Narrative
   m_TagString: DungeonMaster
@@ -1119,6 +1117,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d300f27ff58757429f12993475e4fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1091353375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091353363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e840988d91cbe45b21fc17b1ab76ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1091353376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091353363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017818e8e010ada4ab300c022219a0c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1109795159
@@ -1360,7 +1382,7 @@ MonoBehaviour:
     magna magna. Maecenas viverra volutpat ante, sed suscipit neque volutpat at.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
-  m_sharedMaterial: {fileID: -7865113321702200562, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
+  m_sharedMaterial: {fileID: -3681735049738075256, guid: 1beab826935d3ef46a4ac9e80c6c6ba3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1384,8 +1406,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32.48
+  m_fontSizeBase: 32.48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1420,7 +1442,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 5, y: 0, z: 5, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1451,6 +1473,8 @@ GameObject:
   - component: {fileID: 1297255354}
   - component: {fileID: 1297255353}
   - component: {fileID: 1297255352}
+  - component: {fileID: 1297255359}
+  - component: {fileID: 1297255360}
   m_Layer: 0
   m_Name: Map
   m_TagString: Map
@@ -1544,6 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ee8f1c59d20bc46af7eed59d686db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitOption: 0
 --- !u!114 &1297255357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,6 +1591,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b099f71b828e3e4ea92976cae63bd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1297255359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297255349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ed6c23455165c46b62fa4323d2f7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitOption: 0
+--- !u!114 &1297255360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297255349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cc544cf321ac44ab9111ffd739d766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1535731535
@@ -1728,7 +1778,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
-  m_sharedMaterial: {fileID: 4725159990584085729, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
+  m_sharedMaterial: {fileID: 8271541076219424236, guid: 74bc83992001f7e47bcf69e130d22907, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1860,7 +1910,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 20
+  m_ScrollSensitivity: 30
   m_Viewport: {fileID: 398661307}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -1918,6 +1968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778492465}
+  - component: {fileID: 1778492464}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1925,6 +1976,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1778492464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778492463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e793a58bb029b0747a0fb2efbc1b862b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scroll: {fileID: 1630139141}
 --- !u!4 &1778492465
 Transform:
   m_ObjectHideFlags: 0

@@ -28,6 +28,7 @@ public class NinhoAranha : MonoBehaviour
         else
         {
             narrador.Diz(txt.txtMorte);
+            NewGame.waitInput = true;
         }
 
     }

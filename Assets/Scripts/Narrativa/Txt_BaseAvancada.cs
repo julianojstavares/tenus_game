@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Txt_BaseAvancada : MonoBehaviour
@@ -12,7 +10,7 @@ public class Txt_BaseAvancada : MonoBehaviour
 
     public string matador { get; } = "Você matou guardas inocentes<br>";
 
-    public string perdedor { get; } = "Você morreu";
+    public string perdedor { get; } = "Você tentou lutar mas foi destroçado pelo comandante e os outros soldados elfos negros<br>";
 
-    public string furtivo { get; } = "Você está indo em direção ao portão da cidade";
+    public string furtivo { get; } = "Você está no meio do feno, dentro da carroça, sendo levado em direção ao portão da cidade. É fácil sair da carroça a qualquer momento<br>";
 }

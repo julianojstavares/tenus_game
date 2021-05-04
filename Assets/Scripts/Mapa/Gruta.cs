@@ -33,6 +33,7 @@ public class Gruta : MonoBehaviour
             {
                 narrador.Diz(txt.comOuro);
                 waitOption = false;
+                NewGame.waitInput = true;
             }
             else if (lizaro.GetOpcao() == 2)
             {

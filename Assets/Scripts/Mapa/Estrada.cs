@@ -46,6 +46,7 @@ public class Estrada : MonoBehaviour
             {
                 waitOption = false;
                 narrador.Diz(txt.comer);
+                NewGame.waitInput = true;
             }
             else if (lizaro.GetOpcao() == 2)
             {

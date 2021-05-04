@@ -41,6 +41,7 @@ public class BaseAvancada : MonoBehaviour
                     else
                     {
                         narrador.Diz(txt.perdedor);
+                        NewGame.waitInput = true;
                     }
                     break;
                 case 2:

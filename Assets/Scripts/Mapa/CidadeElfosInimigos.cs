@@ -42,6 +42,7 @@ public class CidadeElfosInimigos : MonoBehaviour
             {
                 case 1:
                     narrador.Diz(txt.derrotado);
+                    NewGame.waitInput = true;
                     break;
                 case 20:
                     Vitoria();
@@ -69,6 +70,7 @@ public class CidadeElfosInimigos : MonoBehaviour
                     Vitoria();
                     break;
                 default:
+                    Combate();
                     Debug.LogWarning("Out of range");
                     break;
             }
